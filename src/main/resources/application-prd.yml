@@ -1,0 +1,17 @@
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://ep-orange-mouse-a58jpbkk-pooler.us-east-2.aws.neon.tech/neondb
+    username: neondb_owner
+    password: npg_nc7dOLDaV3kH
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 30000
+      connection-timeout: 30000
+  jpa:
+    hibernate:
+      ddl-auto: create
+      show-sql: true

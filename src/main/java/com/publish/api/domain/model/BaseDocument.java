@@ -2,14 +2,14 @@ package com.publish.api.domain.model;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import jakarta.persistence.MappedSuperclass;
 
 @MappedSuperclass
 public abstract class BaseDocument {
 
     @Id
-    @GeneratedValue( strategy = GenerationType.IDENTITY)
+    @GeneratedValue( strategy = GenerationType.AUTO)
     private Long id;
     private String icon;
     private String description;

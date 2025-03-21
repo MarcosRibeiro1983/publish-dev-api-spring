@@ -5,7 +5,7 @@ spring:
     password:
   jpa:
     show-sql: true
-    open-in-value: false
+    open-in-view: false
     hibernate:
       dll-auto: create
     properties:
